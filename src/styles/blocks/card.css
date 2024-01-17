@@ -45,6 +45,16 @@
   text-align: left;
 }
 
+.card--list {
+  flex-direction: row;
+}
+
+.card__img--list {
+  border-radius: 8px 0 0 8px;
+  height: 100%;
+  width: auto;
+}
+
 @media (width < 1280px) {
   .card__text {
     font-size: 15px;
@@ -57,6 +67,10 @@
   .card__info {
     font-size: 14px;
   }
+
+  .card__img--list {
+    width: 400px;
+  }
 }
 
 @media (width < 576px) {
@@ -66,5 +80,15 @@
 
   .card__content {
     min-height: 0;
+  }
+
+  .card--list {
+    flex-direction: column;
+  }
+
+  .card__img--list {
+    height: 192px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
   }
 }
